@@ -20,7 +20,6 @@ const Todos = () => {
       try {
         const response = await axios.get("http://localhost:3000/todolist");
         setData(response.data);
-
       } catch (error) {
         console.log(error);
       }
